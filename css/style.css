@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    -webkit-border-box: box-sizing;
+    -moz-border-box: box-sizing;
+    -ms-border-box: box-sizing;
+    -o-border-box: box-sizing;
+    border-box: box-sizing;
+    background-image: url('./../img/background.jpg');
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: -5px 5px 20px rgba(1, 1, 1, .9);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.83+54 */
+    background: -moz-linear-gradient(-45deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.83) 54%, rgba(0,0,0,0.83) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.83) 54%,rgba(0,0,0,0.83) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.83) 54%,rgba(0,0,0,0.83) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d4000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.container {
+    position: relative;
+    width: 260px;
+    height: 550px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .1);
+    transform: rotate(-30deg) skew(15deg) scale(.8);
+    cursor: pointer;
+}
+
+.container .card {
+    position: absolute;
+    transition: all .5s ease;
+    height: 100%;
+    background-color: rgba(204, 204, 204, .97);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.container .card .linea {
+    width: 80%;
+    margin: 5px auto;
+    background: grey;
+    color: red;
+    height: 1px;
+}
+
+.container .card img {
+    border-radius: 5px;
+}
+
+.container .card h2 { 
+    margin-top: 5px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container .card h3 { 
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card:nth-child(4) {
+    border: 1px solid rgba(1, 1, 1, .5);
+}
+
+.container:hover .card:nth-child(4) {
+    transform: translate(160px, -160px);
+    opacity: .96;
+    box-shadow: -5px 5px 20px rgba(1, 1, 1, .5);
+}
+
+.container:hover .card:nth-child(3) {
+    transform: translate(120px, -120px);
+    opacity: .7;
+    box-shadow: -5px 5px 20px rgba(1, 1, 1, .6);
+}
+
+.container:hover .card:nth-child(2) {
+    transform: translate(80px, -80px);
+    opacity: .5;
+    box-shadow: -5px 5px 20px rgba(1, 1, 1, .7);
+}
+
+.container:hover .card:nth-child(1) {
+    transform: translate(40px, -40px);
+    opacity: .3;
+    box-shadow: -5px 5px 20px rgba(1, 1, 1, .8);
+}
